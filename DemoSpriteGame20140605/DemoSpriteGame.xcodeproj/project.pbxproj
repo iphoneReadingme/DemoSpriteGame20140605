@@ -25,6 +25,7 @@
 		5B454410194193900061F3C5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5B45440E194193900061F3C5 /* InfoPlist.strings */; };
 		5B454412194193900061F3C5 /* DemoSpriteGameTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5B454411194193900061F3C5 /* DemoSpriteGameTests.mm */; };
 		5B454420194199B00061F3C5 /* DGSpaceshipSprite.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5B45441F194199B00061F3C5 /* DGSpaceshipSprite.mm */; };
+		5B4544261941A2790061F3C5 /* DGLabelSpriteNode.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5B4544251941A2790061F3C5 /* DGLabelSpriteNode.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,8 @@
 		5B454411194193900061F3C5 /* DemoSpriteGameTests.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = DemoSpriteGameTests.mm; sourceTree = "<group>"; };
 		5B45441E194199B00061F3C5 /* DGSpaceshipSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGSpaceshipSprite.h; sourceTree = "<group>"; };
 		5B45441F194199B00061F3C5 /* DGSpaceshipSprite.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DGSpaceshipSprite.mm; sourceTree = "<group>"; };
+		5B4544241941A2790061F3C5 /* DGLabelSpriteNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGLabelSpriteNode.h; sourceTree = "<group>"; };
+		5B4544251941A2790061F3C5 /* DGLabelSpriteNode.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DGLabelSpriteNode.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +190,8 @@
 		5B45441D194199B00061F3C5 /* ObjectiveCCode */ = {
 			isa = PBXGroup;
 			children = (
+				5B4544241941A2790061F3C5 /* DGLabelSpriteNode.h */,
+				5B4544251941A2790061F3C5 /* DGLabelSpriteNode.mm */,
 				5B45441E194199B00061F3C5 /* DGSpaceshipSprite.h */,
 				5B45441F194199B00061F3C5 /* DGSpaceshipSprite.mm */,
 			);
@@ -296,6 +301,7 @@
 				5B4543F8194193900061F3C5 /* DemoSpriteGameViewController.mm in Sources */,
 				5B4543F2194193900061F3C5 /* DemoSpriteGameAppDelegate.mm in Sources */,
 				5B4543EE194193900061F3C5 /* main.mm in Sources */,
+				5B4544261941A2790061F3C5 /* DGLabelSpriteNode.mm in Sources */,
 				5B454420194199B00061F3C5 /* DGSpaceshipSprite.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

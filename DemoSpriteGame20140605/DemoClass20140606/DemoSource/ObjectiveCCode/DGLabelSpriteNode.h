@@ -1,5 +1,5 @@
 //
-//  DemoSpriteGameViewController.h
+//  DGLabelSpriteNode.h
 //  DemoSpriteGame
 //
 
@@ -9,11 +9,11 @@
 #import <UIKit/UIKit.h>
 #import <SpriteKit/SpriteKit.h>
 
-@interface DGSpaceshipSprite : SKSpriteNode
+@interface DGLabelSpriteNode : SKLabelNode
 {
 	
 }
 
-+ (DGSpaceshipSprite*)addSpaceShipSprite:(CGRect)frame;
++ (DGLabelSpriteNode*)addLabelSprite:(CGRect)frame;
 
 @end
