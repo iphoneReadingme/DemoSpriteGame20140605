@@ -24,6 +24,7 @@
 		5B454408194193900061F3C5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B4543E3194193900061F3C5 /* UIKit.framework */; };
 		5B454410194193900061F3C5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5B45440E194193900061F3C5 /* InfoPlist.strings */; };
 		5B454412194193900061F3C5 /* DemoSpriteGameTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5B454411194193900061F3C5 /* DemoSpriteGameTests.mm */; };
+		5B454420194199B00061F3C5 /* DGSpaceshipSprite.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5B45441F194199B00061F3C5 /* DGSpaceshipSprite.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		5B45440D194193900061F3C5 /* DemoSpriteGameTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DemoSpriteGameTests-Info.plist"; sourceTree = "<group>"; };
 		5B45440F194193900061F3C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5B454411194193900061F3C5 /* DemoSpriteGameTests.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = DemoSpriteGameTests.mm; sourceTree = "<group>"; };
+		5B45441E194199B00061F3C5 /* DGSpaceshipSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGSpaceshipSprite.h; sourceTree = "<group>"; };
+		5B45441F194199B00061F3C5 /* DGSpaceshipSprite.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DGSpaceshipSprite.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +93,7 @@
 		5B4543D31941938F0061F3C5 = {
 			isa = PBXGroup;
 			children = (
+				5B45441B194199B00061F3C5 /* DemoClass20140606 */,
 				5B4543E7194193900061F3C5 /* DemoSpriteGame */,
 				5B45440B194193900061F3C5 /* DemoSpriteGameTests */,
 				5B4543DE194193900061F3C5 /* Frameworks */,
@@ -162,6 +166,31 @@
 				5B45440E194193900061F3C5 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5B45441B194199B00061F3C5 /* DemoClass20140606 */ = {
+			isa = PBXGroup;
+			children = (
+				5B45441C194199B00061F3C5 /* DemoSource */,
+			);
+			path = DemoClass20140606;
+			sourceTree = "<group>";
+		};
+		5B45441C194199B00061F3C5 /* DemoSource */ = {
+			isa = PBXGroup;
+			children = (
+				5B45441D194199B00061F3C5 /* ObjectiveCCode */,
+			);
+			path = DemoSource;
+			sourceTree = "<group>";
+		};
+		5B45441D194199B00061F3C5 /* ObjectiveCCode */ = {
+			isa = PBXGroup;
+			children = (
+				5B45441E194199B00061F3C5 /* DGSpaceshipSprite.h */,
+				5B45441F194199B00061F3C5 /* DGSpaceshipSprite.mm */,
+			);
+			path = ObjectiveCCode;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,6 +296,7 @@
 				5B4543F8194193900061F3C5 /* DemoSpriteGameViewController.mm in Sources */,
 				5B4543F2194193900061F3C5 /* DemoSpriteGameAppDelegate.mm in Sources */,
 				5B4543EE194193900061F3C5 /* main.mm in Sources */,
+				5B454420194199B00061F3C5 /* DGSpaceshipSprite.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,6 +511,7 @@
 				5B454417194193900061F3C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5B454418194193900061F3C5 /* Build configuration list for PBXNativeTarget "DemoSpriteGameTests" */ = {
 			isa = XCConfigurationList;
@@ -489,6 +520,7 @@
 				5B45441A194193900061F3C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
