@@ -11,6 +11,8 @@
 #import "DGLabelSpriteNode.h"
 #import "GameScene.h"
 
+#import "DemoSpriteGame-Bridging-Header.h"
+//#import "DemoTest-Swift.h"
 
 
 @interface GameScene()
@@ -128,11 +130,11 @@
 
 - (void)addSwiftDemoTest
 {
-//	Demo* demo = [[Demo alloc] initWithName:@"hi"];
-//	NSLog(@"the instance is [%@]", demo);
-//	DemoTest* demoTest = [[DemoTest alloc] initWithName:@"hi"];
-//	NSLog(@"the instance is [%@]", demoTest);
-//	[demoTest testFun];
+	Demo* demo = [[Demo alloc] initWithName:@"hi"];
+	NSLog(@"the instance is [%@]", demo);
+	DemoTest* demoTest = [[DemoTest alloc] initWithName:@"hi"];
+	NSLog(@"the instance is [%@]", demoTest);
+	[demoTest testFun];
 }
 
 @end

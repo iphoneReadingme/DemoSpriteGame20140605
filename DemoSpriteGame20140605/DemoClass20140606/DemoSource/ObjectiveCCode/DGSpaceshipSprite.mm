@@ -24,8 +24,8 @@
 	shipNode.yScale = 0.5f;
 	
 	///< 旋转
-	SKAction *action = [SKAction rotateByAngle:M_PI duration:1];
-	[shipNode runAction:[SKAction repeatActionForever:action]];
+	//SKAction *action = [SKAction rotateByAngle:M_PI duration:1];
+	//[shipNode runAction:[SKAction repeatActionForever:action]];
 	
 	return shipNode;
 }
