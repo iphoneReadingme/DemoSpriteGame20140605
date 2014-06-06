@@ -1,5 +1,5 @@
 //
-//  DemoSpriteGameViewController.h
+//  GameViewController.h
 //  DemoSpriteGame
 //
 
@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import <SpriteKit/SpriteKit.h>
 
-@interface DemoSpriteGameViewController : UIViewController
+@interface GameViewController : UIViewController
 
 @end

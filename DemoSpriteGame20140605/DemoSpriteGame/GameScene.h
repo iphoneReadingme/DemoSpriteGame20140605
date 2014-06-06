@@ -1,5 +1,5 @@
 //
-//  DemoSpriteGameScene.h
+//  GameScene.h
 //  DemoSpriteGame
 //
 
@@ -8,6 +8,6 @@
 
 #import <SpriteKit/SpriteKit.h>
 
-@interface DemoSpriteGameScene : SKScene
+@interface GameScene : SKScene
 
 @end
