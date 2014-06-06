@@ -11,8 +11,8 @@
 #import "DGLabelSpriteNode.h"
 #import "GameScene.h"
 
-#import "DemoSpriteGame-Bridging-Header.h"
-//#import "DemoTest-Swift.h"
+//#import "DemoSpriteGame-Bridging-Header.h"
+#import "DemoTest-Swift.h"
 
 
 @interface GameScene()

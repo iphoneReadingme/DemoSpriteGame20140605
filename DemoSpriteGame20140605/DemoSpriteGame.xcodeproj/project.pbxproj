@@ -50,7 +50,6 @@
 		5B3368CF1941B90A00ED9117 /* DGLabelSpriteNode.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DGLabelSpriteNode.mm; sourceTree = "<group>"; };
 		5B3368D01941B90A00ED9117 /* DGSpaceshipSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGSpaceshipSprite.h; sourceTree = "<group>"; };
 		5B3368D11941B90A00ED9117 /* DGSpaceshipSprite.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DGSpaceshipSprite.mm; sourceTree = "<group>"; };
-		5B3368DA1941BB5800ED9117 /* DemoSpriteGame-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DemoSpriteGame-Bridging-Header.h"; sourceTree = "<group>"; };
 		5B3368DB1941BB5800ED9117 /* DemoTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoTest.swift; sourceTree = "<group>"; };
 		5B3368DD1941BBF800ED9117 /* DemoTest-Swift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DemoTest-Swift.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -168,7 +167,6 @@
 			children = (
 				5B3368DD1941BBF800ED9117 /* DemoTest-Swift.h */,
 				5B3368DB1941BB5800ED9117 /* DemoTest.swift */,
-				5B3368DA1941BB5800ED9117 /* DemoSpriteGame-Bridging-Header.h */,
 			);
 			path = SwiftCode;
 			sourceTree = "<group>";
@@ -400,7 +398,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "E18AEF7B-4F86-484E-AF5E-C294CA495C9C";
-				SWIFT_OBJC_BRIDGING_HEADER = "DemoClass20140606/DemoSource/SwiftCode/DemoSpriteGame-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "DemoClass20140606/DemoSource/SwiftCode/DemoTest-Swift.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -416,7 +414,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "E18AEF7B-4F86-484E-AF5E-C294CA495C9C";
-				SWIFT_OBJC_BRIDGING_HEADER = "DemoClass20140606/DemoSource/SwiftCode/DemoSpriteGame-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "DemoClass20140606/DemoSource/SwiftCode/DemoTest-Swift.h";
 			};
 			name = Release;
 		};
