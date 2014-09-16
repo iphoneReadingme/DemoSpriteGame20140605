@@ -9,6 +9,7 @@
 
 #import "DGSpriteObjectFactory.h"
 #import "GameScene.h"
+#import "DGSpaceshipScene.h"
 
 
 
@@ -81,7 +82,7 @@
 		{
 			///< 双击打印测试信息
 			//self.touchOne()
-			[_helloLabel addActionObj];
+			[self addActionObj];
 		}
 		else if (nCount == 1)
 		{
@@ -135,6 +136,22 @@
 	[self addLabelSprite];      ///< 显示文本
 }
 
+
+- (void)addActionObj
+{
+	SKAction* moveUp = [SKAction moveByX:0 y:100 duration:0.5];
+	SKAction* zoom = [SKAction scaleTo:2.0 duration:0.25];
+	SKAction* pause = [SKAction waitForDuration:0.5];
+	SKAction* fadeOut = [SKAction fadeOutWithDuration:0.25];
+	SKAction* fadeIn = [SKAction fadeInWithDuration:0.5];
+	SKAction* moveSequence = [SKAction sequence:@[moveUp, zoom, pause, fadeOut, fadeIn]];
+	
+	[_helloLabel runAction:moveSequence completion:^{
+		SKScene * spaceshipScene = [[DGSpaceshipScene alloc] initWithSize:self.size];
+		SKTransition *doors= [SKTransition doorsOpenVerticalWithDuration:0.5];
+		[self.view presentScene:spaceshipScene transition:doors];
+	}];
+}
 
 
 @end

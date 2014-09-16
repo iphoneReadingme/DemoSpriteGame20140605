@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5B08C81E19C80D27001D3684 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B08C81D19C80D27001D3684 /* SpriteKit.framework */; };
 		5B316B901941B5F8004AFD33 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B316B8F1941B5F8004AFD33 /* main.m */; };
 		5B316B931941B5F8004AFD33 /* DemoSpriteGameAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5B316B921941B5F8004AFD33 /* DemoSpriteGameAppDelegate.mm */; };
 		5B316B961941B5F8004AFD33 /* GameScene.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5B316B951941B5F8004AFD33 /* GameScene.mm */; };
@@ -19,6 +18,8 @@
 		5B3368D61941B90A00ED9117 /* DGLabelSpriteNode.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5B3368CF1941B90A00ED9117 /* DGLabelSpriteNode.mm */; };
 		5B3368D71941B90A00ED9117 /* DGSpaceshipSprite.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5B3368D11941B90A00ED9117 /* DGSpaceshipSprite.mm */; };
 		5BC0FD4F19C2F17C00989E68 /* DGSpriteObjectFactory.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5BC0FD4E19C2F17C00989E68 /* DGSpriteObjectFactory.mm */; };
+		5BF2610B19C8698900775EC1 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BF2610A19C8698900775EC1 /* SpriteKit.framework */; };
+		5BF2610F19C8699B00775EC1 /* DGSpaceshipScene.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2610E19C8699B00775EC1 /* DGSpaceshipScene.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +33,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5B08C81D19C80D27001D3684 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/System/Library/Frameworks/SpriteKit.framework; sourceTree = DEVELOPER_DIR; };
 		5B316B8A1941B5F8004AFD33 /* DemoSpriteGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoSpriteGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B316B8E1941B5F8004AFD33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B316B8F1941B5F8004AFD33 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -55,6 +55,9 @@
 		5BC0FD4C19C2F17C00989E68 /* DGSpriteMacroDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGSpriteMacroDefine.h; sourceTree = "<group>"; };
 		5BC0FD4D19C2F17C00989E68 /* DGSpriteObjectFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGSpriteObjectFactory.h; sourceTree = "<group>"; };
 		5BC0FD4E19C2F17C00989E68 /* DGSpriteObjectFactory.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DGSpriteObjectFactory.mm; sourceTree = "<group>"; };
+		5BF2610A19C8698900775EC1 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/SpriteKit.framework; sourceTree = DEVELOPER_DIR; };
+		5BF2610D19C8699B00775EC1 /* DGSpaceshipScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGSpaceshipScene.h; sourceTree = "<group>"; };
+		5BF2610E19C8699B00775EC1 /* DGSpaceshipScene.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DGSpaceshipScene.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B08C81E19C80D27001D3684 /* SpriteKit.framework in Frameworks */,
+				5BF2610B19C8698900775EC1 /* SpriteKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +153,7 @@
 		5B3368CC1941B90A00ED9117 /* DemoSource */ = {
 			isa = PBXGroup;
 			children = (
+				5BF2610C19C8699B00775EC1 /* GameScene */,
 				5B3368CD1941B90A00ED9117 /* ObjectiveCCode */,
 			);
 			path = DemoSource;
@@ -172,9 +176,18 @@
 		5B8B0C3B19C80CBA008BF8B1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5B08C81D19C80D27001D3684 /* SpriteKit.framework */,
+				5BF2610A19C8698900775EC1 /* SpriteKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5BF2610C19C8699B00775EC1 /* GameScene */ = {
+			isa = PBXGroup;
+			children = (
+				5BF2610D19C8699B00775EC1 /* DGSpaceshipScene.h */,
+				5BF2610E19C8699B00775EC1 /* DGSpaceshipScene.mm */,
+			);
+			path = GameScene;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,6 +294,7 @@
 				5B316B931941B5F8004AFD33 /* DemoSpriteGameAppDelegate.mm in Sources */,
 				5B316B961941B5F8004AFD33 /* GameScene.mm in Sources */,
 				5B316B901941B5F8004AFD33 /* main.m in Sources */,
+				5BF2610F19C8699B00775EC1 /* DGSpaceshipScene.mm in Sources */,
 				5B3368D71941B90A00ED9117 /* DGSpaceshipSprite.mm in Sources */,
 				5B3368D61941B90A00ED9117 /* DGLabelSpriteNode.mm in Sources */,
 				5BC0FD4F19C2F17C00989E68 /* DGSpriteObjectFactory.mm in Sources */,
@@ -403,6 +417,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(DEVELOPER_DIR)/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/System/Library/Frameworks",
+					"$(DEVELOPER_DIR)/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks",
 				);
 				INFOPLIST_FILE = DemoSpriteGame/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
@@ -424,6 +439,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(DEVELOPER_DIR)/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/System/Library/Frameworks",
+					"$(DEVELOPER_DIR)/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks",
 				);
 				INFOPLIST_FILE = DemoSpriteGame/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
