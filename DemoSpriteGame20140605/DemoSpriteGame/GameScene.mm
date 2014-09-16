@@ -7,12 +7,9 @@
 //
 
 
-#import "DGSpaceshipSprite.h"
-#import "DGLabelSpriteNode.h"
+#import "DGSpriteObjectFactory.h"
 #import "GameScene.h"
 
-//#import "DemoSpriteGame-Bridging-Header.h"
-#import "DemoTest-Swift.h"
 
 
 @interface GameScene()
@@ -27,21 +24,13 @@
 
 -(void)didMoveToView:(SKView *)view {
     /* Setup your scene here */
-//    SKLabelNode *myLabel = [SKLabelNode labelNodeWithFontNamed:@"Chalkduster"];
-//    
-//    myLabel.text = @"Hello, World!";
-//    myLabel.fontSize = 65;
-//    myLabel.position = CGPointMake(CGRectGetMidX(self.frame),
-//                                   CGRectGetMidY(self.frame));
-//    
-//    [self addChild:myLabel];
 	
 	///< 添加节点
 	//CGPoint pt = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame));
 	//[self addSpriteObject:pt];
 	
-	[self addSpaceShipSprite];
-	[self addLabelSprite];
+	[self addSpaceShipSprite];  ///< 图片精灵
+	[self addLabelSprite];      ///< 显示文本
 }
 
 //-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
@@ -117,24 +106,24 @@
 ///< 添加一个sprite对象(渲染节点)
 - (void)addSpaceShipSprite
 {
-	self.shipNode = [DGSpaceshipSprite addSpaceShipSprite:self.frame];
-	[self addChild:_shipNode];
+	self.shipNode = [DGSpriteObjectFactory buildSpaceShipSprite:self.frame];
+//	[self addChild:_shipNode];
 }
 
 ///< 添加一个文本对象(渲染节点)
 - (void)addLabelSprite
 {
-	self.helloLabel = [DGLabelSpriteNode addLabelSprite:self.frame];
+	self.helloLabel = [DGSpriteObjectFactory buildLabelSprite:self.frame];
 	[self addChild:_helloLabel];
 }
 
 - (void)addSwiftDemoTest
 {
-	Demo* demo = [[Demo alloc] initWithName:@"hi"];
-	NSLog(@"the instance is [%@]", demo);
-	DemoTest* demoTest = [[DemoTest alloc] initWithName:@"hi"];
-	NSLog(@"the instance is [%@]", demoTest);
-	[demoTest testFun];
+//	Demo* demo = [[Demo alloc] initWithName:@"hi"];
+//	NSLog(@"the instance is [%@]", demo);
+//	DemoTest* demoTest = [[DemoTest alloc] initWithName:@"hi"];
+//	NSLog(@"the instance is [%@]", demoTest);
+//	[demoTest testFun];
 }
 
 @end

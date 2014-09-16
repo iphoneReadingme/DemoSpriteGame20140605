@@ -17,11 +17,13 @@
 {
 	DGLabelSpriteNode* textNode = nil;
 	
-	textNode = [DGLabelSpriteNode labelNodeWithFontNamed:@"Chalkduster"];
-	
+	textNode = [DGLabelSpriteNode labelNodeWithText:@"Hello, World!"];
+//	textNode = [DGLabelSpriteNode labelNodeWithFontNamed:@"Chalkduster"];
+//	textNode.fontName = @"STHeitiSC-Medium";
 	textNode.text = @"Hello, World!";
+	
 	textNode.fontSize = 30;
-	//textNode.fontColor = [UIColor blueColor];
+	textNode.fontColor = [UIColor blueColor];
 	textNode.position = CGPointMake(CGRectGetMidX(frame), CGRectGetMidY(frame));
 	
 	return textNode;

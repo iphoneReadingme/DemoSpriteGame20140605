@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B08C81E19C80D27001D3684 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B08C81D19C80D27001D3684 /* SpriteKit.framework */; };
 		5B316B901941B5F8004AFD33 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B316B8F1941B5F8004AFD33 /* main.m */; };
 		5B316B931941B5F8004AFD33 /* DemoSpriteGameAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5B316B921941B5F8004AFD33 /* DemoSpriteGameAppDelegate.mm */; };
-		5B316B961941B5F8004AFD33 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B316B951941B5F8004AFD33 /* GameScene.m */; };
+		5B316B961941B5F8004AFD33 /* GameScene.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5B316B951941B5F8004AFD33 /* GameScene.mm */; };
 		5B316B981941B5F8004AFD33 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5B316B971941B5F8004AFD33 /* GameScene.sks */; };
 		5B316B9B1941B5F8004AFD33 /* DemoSpriteGameViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5B316B9A1941B5F8004AFD33 /* DemoSpriteGameViewController.mm */; };
 		5B316B9E1941B5F8004AFD33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B316B9C1941B5F8004AFD33 /* Main.storyboard */; };
@@ -17,7 +18,7 @@
 		5B316BAC1941B5F8004AFD33 /* DemoSpriteGameTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5B316BAB1941B5F8004AFD33 /* DemoSpriteGameTests.mm */; };
 		5B3368D61941B90A00ED9117 /* DGLabelSpriteNode.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5B3368CF1941B90A00ED9117 /* DGLabelSpriteNode.mm */; };
 		5B3368D71941B90A00ED9117 /* DGSpaceshipSprite.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5B3368D11941B90A00ED9117 /* DGSpaceshipSprite.mm */; };
-		5B3368DC1941BB5800ED9117 /* DemoTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3368DB1941BB5800ED9117 /* DemoTest.swift */; };
+		5BC0FD4F19C2F17C00989E68 /* DGSpriteObjectFactory.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5BC0FD4E19C2F17C00989E68 /* DGSpriteObjectFactory.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,13 +32,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5B08C81D19C80D27001D3684 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/System/Library/Frameworks/SpriteKit.framework; sourceTree = DEVELOPER_DIR; };
 		5B316B8A1941B5F8004AFD33 /* DemoSpriteGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoSpriteGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B316B8E1941B5F8004AFD33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B316B8F1941B5F8004AFD33 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5B316B911941B5F8004AFD33 /* DemoSpriteGameAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoSpriteGameAppDelegate.h; sourceTree = "<group>"; };
 		5B316B921941B5F8004AFD33 /* DemoSpriteGameAppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = DemoSpriteGameAppDelegate.mm; sourceTree = "<group>"; };
 		5B316B941941B5F8004AFD33 /* GameScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
-		5B316B951941B5F8004AFD33 /* GameScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
+		5B316B951941B5F8004AFD33 /* GameScene.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = GameScene.mm; sourceTree = "<group>"; };
 		5B316B971941B5F8004AFD33 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		5B316B991941B5F8004AFD33 /* DemoSpriteGameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoSpriteGameViewController.h; sourceTree = "<group>"; };
 		5B316B9A1941B5F8004AFD33 /* DemoSpriteGameViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = DemoSpriteGameViewController.mm; sourceTree = "<group>"; };
@@ -50,8 +52,9 @@
 		5B3368CF1941B90A00ED9117 /* DGLabelSpriteNode.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DGLabelSpriteNode.mm; sourceTree = "<group>"; };
 		5B3368D01941B90A00ED9117 /* DGSpaceshipSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGSpaceshipSprite.h; sourceTree = "<group>"; };
 		5B3368D11941B90A00ED9117 /* DGSpaceshipSprite.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DGSpaceshipSprite.mm; sourceTree = "<group>"; };
-		5B3368DB1941BB5800ED9117 /* DemoTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoTest.swift; sourceTree = "<group>"; };
-		5B3368DD1941BBF800ED9117 /* DemoTest-Swift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DemoTest-Swift.h"; sourceTree = "<group>"; };
+		5BC0FD4C19C2F17C00989E68 /* DGSpriteMacroDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGSpriteMacroDefine.h; sourceTree = "<group>"; };
+		5BC0FD4D19C2F17C00989E68 /* DGSpriteObjectFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGSpriteObjectFactory.h; sourceTree = "<group>"; };
+		5BC0FD4E19C2F17C00989E68 /* DGSpriteObjectFactory.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DGSpriteObjectFactory.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B08C81E19C80D27001D3684 /* SpriteKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +79,7 @@
 		5B316B811941B5F8004AFD33 = {
 			isa = PBXGroup;
 			children = (
+				5B8B0C3B19C80CBA008BF8B1 /* Frameworks */,
 				5B3368CB1941B90A00ED9117 /* DemoClass20140606 */,
 				5B316B8C1941B5F8004AFD33 /* DemoSpriteGame */,
 				5B316BA81941B5F8004AFD33 /* DemoSpriteGameTests */,
@@ -97,7 +102,7 @@
 				5B316B911941B5F8004AFD33 /* DemoSpriteGameAppDelegate.h */,
 				5B316B921941B5F8004AFD33 /* DemoSpriteGameAppDelegate.mm */,
 				5B316B941941B5F8004AFD33 /* GameScene.h */,
-				5B316B951941B5F8004AFD33 /* GameScene.m */,
+				5B316B951941B5F8004AFD33 /* GameScene.mm */,
 				5B316B971941B5F8004AFD33 /* GameScene.sks */,
 				5B316B991941B5F8004AFD33 /* DemoSpriteGameViewController.h */,
 				5B316B9A1941B5F8004AFD33 /* DemoSpriteGameViewController.mm */,
@@ -145,7 +150,6 @@
 		5B3368CC1941B90A00ED9117 /* DemoSource */ = {
 			isa = PBXGroup;
 			children = (
-				5B3368D91941BB4400ED9117 /* SwiftCode */,
 				5B3368CD1941B90A00ED9117 /* ObjectiveCCode */,
 			);
 			path = DemoSource;
@@ -158,17 +162,19 @@
 				5B3368CF1941B90A00ED9117 /* DGLabelSpriteNode.mm */,
 				5B3368D01941B90A00ED9117 /* DGSpaceshipSprite.h */,
 				5B3368D11941B90A00ED9117 /* DGSpaceshipSprite.mm */,
+				5BC0FD4C19C2F17C00989E68 /* DGSpriteMacroDefine.h */,
+				5BC0FD4D19C2F17C00989E68 /* DGSpriteObjectFactory.h */,
+				5BC0FD4E19C2F17C00989E68 /* DGSpriteObjectFactory.mm */,
 			);
 			path = ObjectiveCCode;
 			sourceTree = "<group>";
 		};
-		5B3368D91941BB4400ED9117 /* SwiftCode */ = {
+		5B8B0C3B19C80CBA008BF8B1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5B3368DD1941BBF800ED9117 /* DemoTest-Swift.h */,
-				5B3368DB1941BB5800ED9117 /* DemoTest.swift */,
+				5B08C81D19C80D27001D3684 /* SpriteKit.framework */,
 			);
-			path = SwiftCode;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,11 +279,11 @@
 			files = (
 				5B316B9B1941B5F8004AFD33 /* DemoSpriteGameViewController.mm in Sources */,
 				5B316B931941B5F8004AFD33 /* DemoSpriteGameAppDelegate.mm in Sources */,
-				5B316B961941B5F8004AFD33 /* GameScene.m in Sources */,
+				5B316B961941B5F8004AFD33 /* GameScene.mm in Sources */,
 				5B316B901941B5F8004AFD33 /* main.m in Sources */,
 				5B3368D71941B90A00ED9117 /* DGSpaceshipSprite.mm in Sources */,
-				5B3368DC1941BB5800ED9117 /* DemoTest.swift in Sources */,
 				5B3368D61941B90A00ED9117 /* DGLabelSpriteNode.mm in Sources */,
+				5BC0FD4F19C2F17C00989E68 /* DGSpriteObjectFactory.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,7 +351,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				METAL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -380,7 +386,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				METAL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -393,8 +399,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: yang fasheng (QRZJ36RX88)";
+				CODE_SIGN_IDENTITY = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_DIR)/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/System/Library/Frameworks",
+				);
 				INFOPLIST_FILE = DemoSpriteGame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "E18AEF7B-4F86-484E-AF5E-C294CA495C9C";
@@ -409,8 +420,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: yang fasheng (QRZJ36RX88)";
+				CODE_SIGN_IDENTITY = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_DIR)/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/System/Library/Frameworks",
+				);
 				INFOPLIST_FILE = DemoSpriteGame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "E18AEF7B-4F86-484E-AF5E-C294CA495C9C";
