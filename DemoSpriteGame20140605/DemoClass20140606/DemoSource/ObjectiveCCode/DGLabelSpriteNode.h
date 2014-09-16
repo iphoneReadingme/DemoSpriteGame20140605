@@ -25,4 +25,6 @@
 
 + (DGLabelSpriteNode*)addLabelSprite:(CGRect)frame;
 
+- (void)addActionObj;
+
 @end

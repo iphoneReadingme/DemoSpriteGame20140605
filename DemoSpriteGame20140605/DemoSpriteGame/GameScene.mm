@@ -14,6 +14,8 @@
 
 @interface GameScene()
 
+@property BOOL contentCreated;   ///< 跟踪场景是否已创建其内容
+
 @property (nonatomic, retain)DGLabelSpriteNode* helloLabel;
 @property (nonatomic, retain)DGSpaceshipSprite* shipNode;
 
@@ -25,12 +27,16 @@
 -(void)didMoveToView:(SKView *)view {
     /* Setup your scene here */
 	
-	///< 添加节点
-	//CGPoint pt = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame));
-	//[self addSpriteObject:pt];
+	// 每当视图呈现场景时,didMoveToView:方法都会被调用。
+	// 但是,在这种情况下,场景的 内容应只在场景第一次呈现时进行配置。
+	// 因此,这段代码使用先前定义的属性 (contentCreated)来跟踪场景的内容是否已经被初始化。
 	
-	[self addSpaceShipSprite];  ///< 图片精灵
-	[self addLabelSprite];      ///< 显示文本
+	if (!_contentCreated)
+	{
+		[self createSceneContents];
+		
+		_contentCreated = YES;
+	}
 }
 
 //-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
@@ -75,7 +81,7 @@
 		{
 			///< 双击打印测试信息
 			//self.touchOne()
-			[self addSwiftDemoTest];
+			[_helloLabel addActionObj];
 		}
 		else if (nCount == 1)
 		{
@@ -117,13 +123,18 @@
 	[self addChild:_helloLabel];
 }
 
-- (void)addSwiftDemoTest
+- (void)createSceneContents
 {
-//	Demo* demo = [[Demo alloc] initWithName:@"hi"];
-//	NSLog(@"the instance is [%@]", demo);
-//	DemoTest* demoTest = [[DemoTest alloc] initWithName:@"hi"];
-//	NSLog(@"the instance is [%@]", demoTest);
-//	[demoTest testFun];
+	// 场景在绘制它的子元素之前用背景色绘制视图的区域。注意使用 SKColor 类创建 color 对 象。事实上,SKColor 不是一个类,它是一个宏,在 iOS 上映射为 UIColor 而在 OS X 上它映射为 NSColor。它的存在是为了使创建跨平台的代码更容易。
+//	self.backgroundColor = [SKColor blueColor];
+	
+	///< 场景的缩放(scale)模式决定如何进行缩放以适应视图。
+	self.scaleMode = SKSceneScaleModeAspectFit;
+	
+	[self addSpaceShipSprite];  ///< 图片精灵
+	[self addLabelSprite];      ///< 显示文本
 }
+
+
 
 @end
