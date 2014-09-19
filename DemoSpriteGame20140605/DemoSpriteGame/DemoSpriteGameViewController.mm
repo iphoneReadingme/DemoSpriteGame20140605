@@ -56,6 +56,8 @@
 
 - (NSUInteger)supportedInterfaceOrientations
 {
+	NSLog(@"\n\nstatusBarOrientation=%d", (int)[[UIApplication sharedApplication] statusBarOrientation]);
+	NSLog(@"orientation=%d", (int)[[UIDevice currentDevice] orientation]);
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
         return UIInterfaceOrientationMaskAllButUpsideDown;
     } else {

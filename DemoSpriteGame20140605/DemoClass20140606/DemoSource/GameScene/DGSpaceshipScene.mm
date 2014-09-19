@@ -4,6 +4,15 @@
 #import "DGSpaceshipScene.h"
 
 
+
+static inline CGFloat skRandf() {
+    return rand() / (CGFloat) RAND_MAX;
+}
+static inline CGFloat skRand(CGFloat low, CGFloat high) {
+    return skRandf() * (high - low) + low;
+}
+
+
 @interface DGSpaceshipScene()
 
 @property BOOL contentCreated;
@@ -44,7 +53,7 @@
 	
 	///< 重力施加到飞船的物 理体。
 	hull.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:hull.size];
-//	hull.physicsBody.dynamic = NO;
+	hull.physicsBody.dynamic = NO;
 	
 	SKAction* pauseA = [SKAction waitForDuration:1.0];
 	SKAction* moveA = [SKAction moveByX:100 y:50.0 duration:1.0];
@@ -79,6 +88,34 @@
 	return light;
 }
 
+- (void)makeRock
+{
+	SKAction * makeRocks = [SKAction sequence:@[[SKAction performSelector:@selector(addRock) onTarget:self],
+												 [SKAction waitForDuration:0.10 withRange:0.15]
+												 ]];
+	[self runAction:[SKAction repeatActionForever:makeRocks]];
+}
+
+- (void)addRock
+{
+    SKSpriteNode *rock = [[SKSpriteNode alloc] initWithColor:[SKColor brownColor] size:CGSizeMake(8*3,8*3)];
+    rock.position = CGPointMake(skRand(0, self.size.width), self.size.height-50);
+	rock.name = @"rock";
+	rock.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:rock.size];
+    rock.physicsBody.usesPreciseCollisionDetection = YES;
+	
+    [self addChild:rock];
+}
+
+///< 当岩石移动到屏幕之外时移除岩石
+-(void)didSimulatePhysics
+{
+	[self enumerateChildNodesWithName:@"rock" usingBlock:^(SKNode *node, BOOL *stop) {
+        if (node.position.y < 0)
+            [node removeFromParent];
+	}];
+}
+
 - (void)createSceneContents
 {
 	self.backgroundColor = [SKColor grayColor];
@@ -90,6 +127,8 @@
 	[self addChild:spaceship];
 	
 	self.shipNode = spaceship;
+	
+	[self makeRock];
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
